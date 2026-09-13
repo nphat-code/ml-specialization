@@ -62,4 +62,33 @@
 - Học thuật toán giống như có trong tay một bộ đồ nghề (búa, máy khoan xịn). Nhưng có đồ nghề không có nghĩa là bạn biết cách xây một ngôi nhà 3 tầng kiên cố.
 - Khóa học này chú trọng cả 2 phần: **Hiểu công cụ (Algorithms)** và **Kỹ năng áp dụng thực tế (Best Practices)** để tránh mất hàng tháng trời đi chệch hướng trong các dự án AI thực tế.
 
+---
+
+## 4. Supervised Learning: Part 1 — Regression (Học có giám sát & Bài toán Hồi quy)
+
+### 🎯 Bản chất của Supervised Learning
+> Học ánh xạ từ đầu vào đến đầu ra: **$x \rightarrow y$ (Input to Output mapping)**.
+
+- **Đặc điểm then chốt:** Cung cấp cho thuật toán tập dữ liệu huấn luyện đã có sẵn **"câu trả lời đúng" (right answers / labels $y$)** tương ứng với từng đầu vào $x$.
+- Sau khi được huấn luyện qua nhiều cặp $(x, y)$, mô hình có khả năng nhận một giá trị $x$ hoàn toàn mới và đưa ra dự đoán chính xác giá trị $y$.
+
+### 📊 Bảng ví dụ ánh xạ $x \rightarrow y$ trong thực tế:
+| Đầu vào $x$ (Input) | Nhãn đầu ra $y$ (Output) | Ứng dụng (Application) |
+| :--- | :--- | :--- |
+| Email | Spam (0 hoặc 1) | Bộ lọc thư rác (Spam Filter) |
+| Đoạn âm thanh (Audio clip) | Bản ghi văn bản (Text transcript) | Nhận dạng giọng nói (Speech Recognition) |
+| Văn bản tiếng Anh | Văn bản tiếng Việt / Tây Ban Nha | Dịch máy (Machine Translation) |
+| Thông tin user + Thông tin quảng cáo | Click / Không Click (0 hoặc 1) | Quảng cáo trực tuyến (Online Ad Clicks) |
+| Ảnh camera + Cảm biến Radar | Vị trí các xe xung quanh | Xe tự hành (Self-driving car) |
+| Ảnh sản phẩm vừa xuất xưởng | Có trầy/móp/lỗi hay không | Kiểm định chất lượng thị giác (Visual Inspection) |
+| Diện tích nhà (Square feet / $m^2$) | Giá bán căn nhà ($) | Định giá bất động sản |
+
+### 📈 Bài toán Hồi quy (Regression) là gì?
+- **Định nghĩa:** Hồi quy là dạng bài toán học có giám sát trong đó mô hình cần **dự đoán một giá trị số liên tục từ vô số các giá trị khả dĩ (predict a number from infinitely many possible numbers)**.
+- **Ví dụ điển hình:** Dự đoán giá nhà dựa trên diện tích. Giá nhà có thể là 150k, 150.5k, 200k hoặc bất kỳ con số nào ở giữa.
+- **Cách tiếp cận:** Thuật toán sẽ tìm cách khớp một hàm số phù hợp đi qua các điểm dữ liệu:
+  - Khớp đường thẳng (Straight line fit) $\rightarrow$ *Linear Regression*.
+  - Hoặc khớp đường cong (Curve / Polynomial fit) $\rightarrow$ *Non-linear / Polynomial Regression*.
+
+
 

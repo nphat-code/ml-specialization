@@ -15,7 +15,7 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 
 ### 📌 2. Supervised vs. Unsupervised Machine Learning
 - [x] [What is machine learning?](https://www.coursera.org/learn/machine-learning/lecture/PNeuX/what-is-machine-learning) *(5 min)* — Định nghĩa Arthur Samuel (1959) & Câu chuyện cờ đam (Checkers)
-- [ ] [Supervised learning part 1](https://www.coursera.org/learn/machine-learning/lecture/s91wX/supervised-learning-part-1) *(6 min)* — Bài toán Hồi quy (Regression: dự đoán số liên tục)
+- [x] [Supervised learning part 1](https://www.coursera.org/learn/machine-learning/lecture/s91wX/supervised-learning-part-1) *(6 min)* — Bài toán Hồi quy (Regression: dự đoán số liên tục)
 - [ ] [Supervised learning part 2](https://www.coursera.org/learn/machine-learning/lecture/Q8Vvp/supervised-learning-part-2) *(7 min)* — Bài toán Phân loại (Classification: dự đoán nhãn rời rạc)
 - [ ] [Unsupervised learning part 1](https://www.coursera.org/learn/machine-learning/lecture/TxO6F/unsupervised-learning-part-1) *(8 min)* — Phân cụm (Clustering: Google News, DNA microarray)
 - [ ] [Unsupervised learning part 2](https://www.coursera.org/learn/machine-learning/lecture/jKBHE/unsupervised-learning-part-2) *(3 min)* — Phát hiện bất thường & Giảm chiều (Anomaly Detection & Dimensionality Reduction)
