@@ -126,6 +126,36 @@
 | **Ví dụ bài toán** | Dự đoán giá nhà, nhiệt độ, doanh số bán lẻ | Spam / Not Spam, Ung thư ác tính / Lành tính, Chó / Mèo |
 | **Mô hình tìm kiếm** | Khớp đường xu hướng (Fit curve / line) | Tìm đường ranh giới phân tách (Decision boundary) |
 
+---
+
+## 6. Unsupervised Learning: Part 1 — Clustering (Học không giám sát & Thuật toán Phân cụm)
+
+### 🧩 Bản chất của Unsupervised Learning (Học không giám sát)
+> Khác với Supervised Learning (luôn có cặp $(x, y)$ kèm nhãn đúng $y$), Unsupervised Learning được cung cấp dữ liệu **KHÔNG CÓ BẤT KỲ NHÃN ĐÁP ÁN ĐÚNG NÀO ($y$)**.
+
+- **Đầu vào:** Chỉ có các đặc trưng $x$ (ví dụ: tuổi và kích thước khối u, nhưng không cho biết khối u đó là lành hay ác tính).
+- **Mục tiêu:** Thuật toán tự khám phá cấu trúc tiềm ẩn (structure), phát hiện các quy luật (patterns) hoặc những thông tin thú vị ẩn giấu trong dữ liệu mà không có con người giám sát hay chỉ dẫn trước.
+
+### 🌐 Thuật toán Phân cụm (Clustering Algorithm)
+- **Định nghĩa:** Là dạng thuật toán Unsupervised Learning phổ biến nhất. Thuật toán tự động nhóm các điểm dữ liệu tương đồng thành các **cụm (clusters)** tách biệt.
+- **3 Ứng dụng thực tế nổi bật:**
+
+1. **Google News (Gom nhóm tin tức tự động):**
+   - Hàng trăm ngàn bài báo xuất hiện mỗi ngày trên Internet.
+   - Thuật toán phân cụm tự động quét các từ khóa xuất hiện cùng nhau (ví dụ: *"panda"*, *"twin"*, *"zoo"*) trên nhiều trang báo để tự động gom lại thành một cụm chủ đề duy nhất (ví dụ: *Gấu trúc sinh đôi ở vườn thú Nhật Bản*). Không cần bất kỳ con người nào gán nhãn thủ công mỗi ngày.
+
+2. **Dữ liệu di truyền học & ADN (DNA Microarray Data):**
+   - Mỗi cột đại diện cho ADN của một cá nhân, mỗi hàng là mức độ biểu hiện (expression) của một gen cụ thể (màu mắt, chiều cao, thậm chí gen quy định việc ghét ăn súp lơ xanh / broccoli...).
+   - Chạy thuật toán phân cụm giúp tự động phân loại các cá nhân thành các nhóm sinh học tương đồng (Type 1, Type 2, Type 3...) mà không cần bác sĩ hay nhà khoa học phải định nghĩa trước đặc điểm từng nhóm.
+
+3. **Phân khúc thị trường & Người dùng (Market Segmentation):**
+   - Phân tích hàng triệu khách hàng trong cơ sở dữ liệu để tìm ra các nhóm hành vi tương đồng.
+   - *Ví dụ thực tế từ DeepLearning.AI:* Phân cụm học viên theo mục đích học:
+     - Nhóm 1: Học để nâng cao kiến thức & thỏa mãn đam mê.
+     - Nhóm 2: Học để chuyển nghề hoặc thăng tiến công việc.
+     - Nhóm 3: Học để cập nhật tác động của AI đối với ngành nghề hiện tại của mình.
+
+
 
 
 

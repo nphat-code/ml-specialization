@@ -17,7 +17,7 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 - [x] [What is machine learning?](https://www.coursera.org/learn/machine-learning/lecture/PNeuX/what-is-machine-learning) *(5 min)* — Định nghĩa Arthur Samuel (1959) & Câu chuyện cờ đam (Checkers)
 - [x] [Supervised learning part 1](https://www.coursera.org/learn/machine-learning/lecture/s91wX/supervised-learning-part-1) *(6 min)* — Bài toán Hồi quy (Regression: dự đoán số liên tục)
 - [x] [Supervised learning part 2](https://www.coursera.org/learn/machine-learning/lecture/Q8Vvp/supervised-learning-part-2) *(7 min)* — Bài toán Phân loại (Classification: dự đoán nhãn rời rạc)
-- [ ] [Unsupervised learning part 1](https://www.coursera.org/learn/machine-learning/lecture/TxO6F/unsupervised-learning-part-1) *(8 min)* — Phân cụm (Clustering: Google News, DNA microarray)
+- [x] [Unsupervised learning part 1](https://www.coursera.org/learn/machine-learning/lecture/TxO6F/unsupervised-learning-part-1) *(8 min)* — Phân cụm (Clustering: Google News, DNA microarray, Phân khúc khách hàng)
 - [ ] [Unsupervised learning part 2](https://www.coursera.org/learn/machine-learning/lecture/jKBHE/unsupervised-learning-part-2) *(3 min)* — Phát hiện bất thường & Giảm chiều (Anomaly Detection & Dimensionality Reduction)
 - [ ] [Jupyter Notebooks](https://www.coursera.org/learn/machine-learning/lecture/lwqzq/jupyter-notebooks) *(4 min)*
 - [ ] [Python and Jupyter Notebooks Lab](https://www.coursera.org/learn/machine-learning/ungradedLab/rNe84/python-and-jupyter-notebooks) *(Lab thực hành)*
