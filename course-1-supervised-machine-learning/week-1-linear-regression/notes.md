@@ -183,6 +183,31 @@ Hãy xác định các bài toán sau thuộc loại học máy nào:
 | **Phân khúc thị trường (Market Segmentation)** | **Unsupervised Learning** *(Clustering)* | Dữ liệu hồ sơ khách hàng không có nhãn sẵn, thuật toán tự phân chia thành các nhóm khách hàng hành vi tương đồng. |
 | **Chẩn đoán bệnh tiểu đường (Diagnosing Diabetes)** | **Supervised Learning** *(Classification)* | Giống bài toán ung thư vú: có hồ sơ bệnh án đầu vào $x$ và nhãn kết quả xét nghiệm $y$ (Mắc tiểu đường / Không mắc). |
 
+---
+
+## 8. Jupyter Notebooks (Môi trường thực hành chuẩn của ML & Data Science)
+
+### 💻 Jupyter Notebook là gì?
+- Công cụ tương tác tiêu chuẩn số 1 thế giới được các kỹ sư AI và nhà khoa học dữ liệu sử dụng để viết code, chạy thử nghiệm và vẽ đồ thị trực quan.
+- Chạy được trực tiếp trên trình duyệt (Coursera Labs) hoặc tích hợp hoàn hảo trong VS Code.
+
+### 🧱 2 Khối cơ bản (Cells) cần nắm:
+1. **Markdown Cell (Ô văn bản):**
+   - Dùng để ghi chú, giải thích lý thuyết, chèn công thức toán LaTeX.
+   - Nhấn **`Shift + Enter`** để render văn bản đẹp mắt.
+2. **Code Cell (Ô mã nguồn):**
+   - Chứa các đoạn code Python có thể thực thi.
+   - Nhấn **`Shift + Enter`** để chạy đoạn code và in kết quả/vẽ biểu đồ ngay bên dưới.
+
+### 🧪 2 Loại bài Lab trong khóa học:
+- **Optional Labs (Lab tự chọn / làm quen):**
+  - Code đã được viết sẵn hoàn chỉnh từ đầu đến cuối.
+  - Mục tiêu: Quan sát cách viết code ML thực tế, bấm `Shift + Enter` chạy qua từng cell để cảm nhận luồng dữ liệu, tự do nghịch và sửa đổi tham số để xem kết quả thay đổi.
+  - Không chấm điểm (không áp lực).
+- **Practice Labs / Graded Assignments (Bắt đầu từ tuần 2):**
+  - Học viên sẽ tự tay viết thêm code logic thuật toán vào các ô trống quy định để nộp bài chấm điểm.
+
+
 
 
 

@@ -19,7 +19,7 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 - [x] [Supervised learning part 2](https://www.coursera.org/learn/machine-learning/lecture/Q8Vvp/supervised-learning-part-2) *(7 min)* — Bài toán Phân loại (Classification: dự đoán nhãn rời rạc)
 - [x] [Unsupervised learning part 1](https://www.coursera.org/learn/machine-learning/lecture/TxO6F/unsupervised-learning-part-1) *(8 min)* — Phân cụm (Clustering: Google News, DNA microarray, Phân khúc khách hàng)
 - [x] [Unsupervised learning part 2](https://www.coursera.org/learn/machine-learning/lecture/jKBHE/unsupervised-learning-part-2) *(3 min)* — Phát hiện bất thường & Giảm chiều (Anomaly Detection & Dimensionality Reduction)
-- [ ] [Jupyter Notebooks](https://www.coursera.org/learn/machine-learning/lecture/lwqzq/jupyter-notebooks) *(4 min)*
+- [x] [Jupyter Notebooks](https://www.coursera.org/learn/machine-learning/lecture/lwqzq/jupyter-notebooks) *(4 min)* — Làm quen môi trường Markdown cell & Code cell (Shift + Enter)
 - [ ] [Python and Jupyter Notebooks Lab](https://www.coursera.org/learn/machine-learning/ungradedLab/rNe84/python-and-jupyter-notebooks) *(Lab thực hành)*
 - [ ] **Practice quiz: Supervised vs unsupervised learning** *(15 min)*
 
