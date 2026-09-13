@@ -18,7 +18,7 @@ Khi học tập và trao đổi trong repository này, AI Assistant tuân theo c
 
 ### Course 1: Supervised Machine Learning: Regression and Classification
 - [ ] **Week 1: Introduction to Machine Learning & Linear Regression**
-  - [ ] Khái niệm Supervised vs Unsupervised Learning
+  - [x] Khái niệm Supervised vs Unsupervised Learning
   - [ ] Model representation: $f_{w, b}(x) = wx + b$
   - [ ] Cost function: Squared error cost function $J(w, b)$
   - [ ] Gradient descent algorithm & Learning rate $\alpha$
