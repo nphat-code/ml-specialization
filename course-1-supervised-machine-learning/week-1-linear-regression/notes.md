@@ -155,6 +155,35 @@
      - Nhóm 2: Học để chuyển nghề hoặc thăng tiến công việc.
      - Nhóm 3: Học để cập nhật tác động của AI đối với ngành nghề hiện tại của mình.
 
+---
+
+## 7. Unsupervised Learning: Part 2 — Anomaly Detection & Dimensionality Reduction
+
+### 🎯 3 Dạng Thuật toán Học không giám sát chính (Khóa 3 sẽ học sâu)
+
+1. **Clustering (Phân cụm):**
+   - Tự động gom các điểm dữ liệu tương đồng thành các nhóm tách biệt.
+2. **Anomaly Detection (Phát hiện điểm bất thường):**
+   - Phát hiện các sự kiện khác biệt bất thường so với dữ liệu thông thường.
+   - **Ứng dụng thực tế lớn nhất:** Phát hiện gian lận tài chính (Financial Fraud Detection) trong hệ thống ngân hàng khi có một giao dịch bất thường xảy ra; phát hiện hỏng hóc thiết bị trong dây chuyền sản xuất công nghiệp.
+3. **Dimensionality Reduction (Giảm chiều dữ liệu - ví dụ PCA):**
+   - Cho phép nén một tập dữ liệu lớn với hàng trăm/hàng ngàn đặc trưng (features) về một tập dữ liệu nhỏ gọn hơn rất nhiều mà **bảo toàn tối đa lượng thông tin**.
+   - Giúp giảm dung lượng lưu trữ, tăng tốc độ huấn luyện mô hình và trực quan hóa dữ liệu trên đồ thị 2D/3D.
+
+---
+
+### 📝 Câu hỏi kiểm tra trực giác (Quiz Drill - Rất hay thi!)
+
+Hãy xác định các bài toán sau thuộc loại học máy nào:
+
+| Bài toán thực tế | Loại học máy | Giải thích bản chất |
+| :--- | :--- | :--- |
+| **Bộ lọc Spam (Spam Filtering)** | **Supervised Learning** *(Classification)* | Dữ liệu huấn luyện có sẵn nhãn email là Spam ($y=1$) hay Non-Spam ($y=0$). |
+| **Gom nhóm tin tức Google News** | **Unsupervised Learning** *(Clustering)* | Hàng triệu bài báo không có sẵn nhãn chủ đề, thuật toán tự gom các bài cùng từ khóa vào 1 nhóm. |
+| **Phân khúc thị trường (Market Segmentation)** | **Unsupervised Learning** *(Clustering)* | Dữ liệu hồ sơ khách hàng không có nhãn sẵn, thuật toán tự phân chia thành các nhóm khách hàng hành vi tương đồng. |
+| **Chẩn đoán bệnh tiểu đường (Diagnosing Diabetes)** | **Supervised Learning** *(Classification)* | Giống bài toán ung thư vú: có hồ sơ bệnh án đầu vào $x$ và nhãn kết quả xét nghiệm $y$ (Mắc tiểu đường / Không mắc). |
+
+
 
 
 
