@@ -27,7 +27,7 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 
 ### 📌 3. Regression Model
 - [x] [Linear regression model part 1](https://www.coursera.org/learn/machine-learning/lecture/1ACA2/linear-regression-model-part-1) *(10 min)* — Ký hiệu toán học: $(x, y)$, $m$, $(x^{(i)}, y^{(i)})$
-- [ ] [Linear regression model part 2](https://www.coursera.org/learn/machine-learning/lecture/nucNi/linear-regression-model-part-2) *(6 min)* — Mô hình dự đoán giá nhà theo diện tích
+- [x] [Linear regression model part 2](https://www.coursera.org/learn/machine-learning/lecture/nucNi/linear-regression-model-part-2) *(6 min)* — Luồng huấn luyện: Training set $\to$ Learning Algorithm $\to f(x) = wx + b \to \hat{y}$
 - [ ] [Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation) *(Lab)*
 - [ ] [Cost function formula](https://www.coursera.org/learn/machine-learning/lecture/1Z0TT/cost-function-formula) *(9 min)* — Hàm mất mát bình phương trung bình: $J(w, b) = \frac{1}{2m} \sum_{i=1}^m (f_{w,b}(x^{(i)}) - y^{(i)})^2$
 - [ ] [Cost function intuition](https://www.coursera.org/learn/machine-learning/lecture/FthLz/cost-function-intuition) *(15 min)* — Trực giác khi $b=0$, đồ thị $J(w)$ parabol

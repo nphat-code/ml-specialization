@@ -230,6 +230,46 @@ Hãy xác định các bài toán sau thuộc loại học máy nào:
   - $x^{(2)}$ là đặc trưng của ngôi nhà thứ 2 trong bảng, KHÔNG PHẢI $x^2$ (bình phương).
   - $y^{(i)}$ là giá bán thực tế của ngôi nhà thứ $i$.
 
+---
+
+## 10. Linear Regression: Part 2 — Supervised Learning Process & Model Representation
+
+### 🔄 Luồng hoạt động của Supervised Learning (The Supervised Learning Pipeline)
+Quy trình cốt lõi gồm 4 bước:
+
+```text
+  [Training Set] 
+  (Features x, Targets y)
+         │
+         ▼
+[Learning Algorithm] ─────► Sinh ra Hàm mô hình f (Model / Hypothesis)
+                                  │
+      Đầu vào mới x ──────────────┼──────────► Dự đoán y-hat (ŷ = f(x))
+```
+
+1. **Training Set:** Cung cấp các đặc trưng $x$ và nhãn mục tiêu thực tế $y$ (câu trả lời đúng).
+2. **Learning Algorithm:** Học các quy luật từ tập dữ liệu huấn luyện.
+3. **Model $f$ (Function / Hypothesis):** Mô hình được sinh ra từ thuật toán.
+4. **Dự đoán $\hat{y}$ (y-hat):** Khi có một ngôi nhà mới với diện tích $x$, nạp vào hàm $f$ để tính ra giá trị dự đoán $\hat{y} = f(x)$.
+
+### ⚖️ Phân biệt $y$ vs. $\hat{y}$ (y-hat):
+- **$y$:** Giá trị thực tế (True value / Ground truth target) trong tập dữ liệu.
+- **$\hat{y}$ ($y$ có dấu mũ trên đầu - "y-hat"):** Giá trị ước lượng / dự đoán của mô hình (Estimate / Prediction). $\hat{y}$ có thể bằng hoặc có sai số so với $y$.
+
+### 📐 Biểu diễn toán học của Mô hình (Model Representation):
+Hàm hồi quy tuyến tính đơn biến (Univariate Linear Regression):
+$$f_{w,b}(x) = wx + b$$
+*(hoặc viết gọn là $f(x) = wx + b$)*
+
+- **$x$:** Biến đầu vào (Feature).
+- **$w, b$:** Các tham số của mô hình (**Parameters** hay **Weights / Bias**).
+  - Giá trị của $w$ (hệ số góc/độ dốc) và $b$ (điểm cắt trục tung) sẽ quyết định hình dạng và vị trí của đường thẳng.
+- **Univariate Linear Regression:**
+  - *Uni* = Một (Latinh).
+  - *Variate* = Biến.
+  - $\rightarrow$ Hồi quy tuyến tính **đơn biến** (chỉ có duy nhất 1 biến đầu vào $x$).
+
+
 
 
 
