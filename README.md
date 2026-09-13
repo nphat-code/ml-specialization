@@ -25,7 +25,7 @@ Khi học tập và trao đổi trong repository này, AI Assistant tuân theo c
 - [ ] **Week 1: Introduction to Machine Learning & Linear Regression**
   - [x] Khái niệm Supervised vs Unsupervised Learning
   - [x] Model representation: $f_{w, b}(x) = wx + b$
-  - [ ] Cost function: Squared error cost function $J(w, b)$
+  - [x] Cost function: Squared error cost function $J(w, b)$
   - [ ] Gradient descent algorithm & Learning rate $\alpha$
   - [ ] Lab: Linear Regression with one variable
 - [ ] **Week 2: Multiple Linear Regression & Practical Tricks**

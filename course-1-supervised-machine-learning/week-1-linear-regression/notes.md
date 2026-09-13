@@ -269,6 +269,37 @@ $$f_{w,b}(x) = wx + b$$
   - *Variate* = Biến.
   - $\rightarrow$ Hồi quy tuyến tính **đơn biến** (chỉ có duy nhất 1 biến đầu vào $x$).
 
+---
+
+## 11. Cost Function Formula (Công thức Hàm Chi Phí / Bình phương sai số)
+
+### 🎯 Vai trò của Cost Function
+- Khi huấn luyện mô hình $f_{w,b}(x) = wx + b$, $w$ và $b$ là các **tham số (parameters / weights & bias)** mà ta có thể điều chỉnh.
+- Thay đổi $w$ và $b$ sẽ tạo ra các đường thẳng khác nhau:
+  - $w$ quyết định **độ dốc (slope)** của đường thẳng.
+  - $b$ quyết định **điểm cắt trục tung (y-intercept)** khi $x = 0$.
+- **Câu hỏi cốt lõi:** Làm thế nào để máy tính tự đo xem đường thẳng nào "khớp tốt nhất" với dữ liệu? $\rightarrow$ Ta cần xây dựng **Hàm chi phí $J(w, b)$**.
+
+### 📐 Từng bước xây dựng công thức $J(w, b)$:
+1. **Sai số tại mẫu thứ $i$ (Error):**
+   $$\text{error}^{(i)} = \hat{y}^{(i)} - y^{(i)} = f_{w,b}(x^{(i)}) - y^{(i)}$$
+2. **Bình phương sai số (Squared Error):**
+   $$(\hat{y}^{(i)} - y^{(i)})^2$$
+   - Giúp sai số luôn $\ge 0$ (dù đoán cao hơn hay thấp hơn giá trị thật đều bị tính là lỗi).
+   - Phạt nặng hơn các dự đoán sai lệch lớn.
+3. **Tổng bình phương sai số của toàn bộ $m$ mẫu:**
+   $$\sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2$$
+4. **Chia cho $m$ để lấy trung bình:**
+   - Giúp hàm chi phí không bị tự động phình to khi số lượng mẫu $m$ tăng lên.
+5. **Chia thêm cho $2$:**
+   - Quy ước chuẩn giúp phép tính đạo hàm sau này triệt tiêu gọn với số mũ 2:
+   $$J(w, b) = \frac{1}{2m} \sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2 = \frac{1}{2m} \sum_{i=1}^m (f_{w,b}(x^{(i)}) - y^{(i)})^2$$
+
+### 🏆 Mục tiêu của giải thuật (Optimization Goal):
+$$\min_{w, b} J(w, b)$$
+Tìm cặp giá trị $(w, b)$ sao cho hàm chi phí $J(w, b)$ đạt giá trị **nhỏ nhất có thể**.
+
+
 
 
 
