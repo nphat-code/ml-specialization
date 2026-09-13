@@ -90,5 +90,42 @@
   - Khớp đường thẳng (Straight line fit) $\rightarrow$ *Linear Regression*.
   - Hoặc khớp đường cong (Curve / Polynomial fit) $\rightarrow$ *Non-linear / Polynomial Regression*.
 
+---
+
+## 5. Supervised Learning: Part 2 — Classification (Học có giám sát & Bài toán Phân loại)
+
+### 🏷️ Phân loại (Classification) là gì?
+- **Định nghĩa:** Phân loại là bài toán dự đoán **các danh mục rời rạc (categories / classes)** từ một tập hữu hạn các giá trị có thể có (thay vì dự đoán một dải số liên tục như Hồi quy).
+- Các thuật ngữ tương đương trong tài liệu và bài giảng: **Class** = **Category** = **Label** (Lớp / Danh mục / Nhãn).
+
+### 🩺 Ví dụ kinh điển: Chẩn đoán ung thư vú (Breast Cancer Detection)
+- **Mục tiêu:** Dự đoán một khối u (tumor) là:
+  - `0`: Lành tính (**Benign** — không phải ung thư, an toàn), thường ký hiệu hình tròn `O`.
+  - `1`: Ác tính (**Malignant** — ung thư, nguy hiểm), thường ký hiệu dấu `X`.
+- Đây là **Binary Classification (Phân loại nhị phân)**: chỉ có 2 khả năng đầu ra ($0$ hoặc $1$).
+
+### 🔢 Phân loại nhiều lớp (Multi-class Classification)
+- Không chỉ giới hạn ở 2 lớp, bài toán có thể có 3, 4 hoặc nhiều lớp hơn:
+  - Ví dụ ung thư: Type 0, Type 1, Type 2.
+  - Nhận diện động vật trong ảnh: Chó, Mèo, Gấu trúc, Ngựa...
+  - **Điểm khác biệt quan trọng với Regression:** Khi đầu ra được mã hóa bằng số $(0, 1, 2)$, mô hình phân loại **chỉ dự đoán đúng các giá trị nguyên rời rạc này**, KHÔNG BAO GIỜ mang ý nghĩa các số nằm giữa như $0.5$ hay $1.7$.
+
+### 📐 Nhiều biến đầu vào (Multiple Features) & Đường ranh giới (Decision Boundary)
+- **1 đặc trưng ($x_1$):** Chỉ dựa vào kích thước khối u (Tumor size).
+- **2 đặc trưng ($x_1, x_2$):** Dựa vào Tuổi bệnh nhân (Age) và Kích thước khối u (Tumor size). Dữ liệu được vẽ trên hệ tọa độ 2D.
+- **Nhiều đặc trưng thực tế ($x_1, x_2, ..., x_n$):** Độ dày khối u, độ đồng đều hình dạng tế bào, viền tế bào...
+- **Nhiệm vụ của thuật toán:** Tìm ra một **Đường ranh giới quyết định (Decision Boundary)** để phân tách tối ưu giữa các lớp (ví dụ tách vùng Lành tính ra khỏi vùng Ác tính). Khi một bệnh nhân mới đến, dựa vào vị trí của họ so với đường ranh giới, bác sĩ có thể đưa ra kết luận chẩn đoán.
+
+---
+
+### ⚖️ So sánh tóm tắt: Regression vs. Classification
+| Tiêu chí | Regression (Hồi quy) | Classification (Phân loại) |
+| :--- | :--- | :--- |
+| **Đầu ra ($y$)** | Số liên tục (Continuous number) | Lớp rời rạc (Discrete category / class) |
+| **Không gian giá trị** | Vô số giá trị khả dĩ (Infinitely many values) | Tập hợp nhỏ, hữu hạn các lớp ($2, 3, ...$) |
+| **Ví dụ bài toán** | Dự đoán giá nhà, nhiệt độ, doanh số bán lẻ | Spam / Not Spam, Ung thư ác tính / Lành tính, Chó / Mèo |
+| **Mô hình tìm kiếm** | Khớp đường xu hướng (Fit curve / line) | Tìm đường ranh giới phân tách (Decision boundary) |
+
+
 
 
