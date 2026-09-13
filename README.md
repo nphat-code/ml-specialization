@@ -11,6 +11,11 @@ Khi học tập và trao đổi trong repository này, AI Assistant tuân theo c
 2. **Tư duy Vector hóa (NumPy Vectorization):** Luôn khuyến khích và hướng dẫn cách biểu diễn phép tính dưới dạng ma trận/vector thay vì dùng vòng lặp `for` lồng nhau.
 3. **Phương pháp gợi mở (Socratic Method):** Khi gặp bài lab hoặc câu hỏi quiz, trợ lý sẽ chỉ ra vị trí lỗi, đặt câu hỏi gợi mở và phân tích nguyên lý để người học tự làm chủ kiến thức, không spoil thẳng đáp án.
 4. **Clean Code & Thực hành chuẩn:** Code được viết rõ ràng, có chú thích kích thước ma trận `(m, n)` hoặc `(m, 1)` để tránh lỗi `shape mismatch`.
+5. **Quy trình học 3 bước (3-Step Learning Loop):**
+   - **Bước 1 (Trước khi xem):** AI cung cấp **Preview nhanh (30s - 1 phút)** nêu rõ vấn đề cần giải quyết và các khái niệm/từ khóa then chốt cần chú ý.
+   - **Bước 2 (Trong lúc xem):** Người học xem video bài giảng của Thầy Andrew Ng để nạp trực giác qua hình vẽ và lời giảng.
+   - **Bước 3 (Sau khi xem):** Người học gửi transcript $\rightarrow$ AI tổng hợp **Notes chi tiết** (công thức LaTeX, bảng so sánh), cập nhật checklist và tự động commit/push GitHub.
+
 
 ---
 
