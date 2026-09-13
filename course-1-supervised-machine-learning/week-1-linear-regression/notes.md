@@ -299,6 +299,65 @@ $$f_{w,b}(x) = wx + b$$
 $$\min_{w, b} J(w, b)$$
 Tìm cặp giá trị $(w, b)$ sao cho hàm chi phí $J(w, b)$ đạt giá trị **nhỏ nhất có thể**.
 
+---
+
+## 12. Cost Function Intuition (Trực giác về Hàm Chi Phí qua mô hình đơn giản b = 0)
+
+### 🎯 Mô hình đơn giản hóa (Simplified Model):
+- Để dễ trực quan hóa trước khi xét đồng thời cả $w$ và $b$, ta tạm gán $b = 0$:
+  $$f_w(x) = w \cdot x$$
+- Lúc này đường thẳng luôn đi qua gốc tọa độ $(0, 0)$.
+- Hàm chi phí chỉ phụ thuộc vào một biến duy nhất là $w$:
+  $$J(w) = \frac{1}{2m} \sum_{i=1}^m (w \cdot x^{(i)} - y^{(i)})^2$$
+
+### 📊 Mối liên hệ giữa 2 đồ thị song song (Side-by-side Visuals):
+Giả sử tập dữ liệu có $m = 3$ điểm: $(1, 1), (2, 2), (3, 3)$.
+
+```text
+    Đồ thị Mô hình f(x)             Đồ thị Hàm chi phí J(w)
+          (x vs y)                           (w vs J(w))
+
+   y ^                                  J(w) ^
+   3 |       *(3,3)                        6 |      * (w=-0.5, J≈5.25)
+   2 |    *(2,2)                           4 |
+   1 | *(1,1)                              2 |   * (w=0, J≈2.33)
+     +─────────────> x                     0 |───*──────*─────────> w
+     0   1   2   3                           -0.5 0    0.5  1 (w=1, J=0: Đáy Parabol)
+```
+
+### 🔢 Tính toán chi tiết qua từng giá trị của $w$:
+1. **Khi chọn $w = 1$:**
+   - $f(x) = 1 \cdot x = x \implies$ Đi qua chính xác cả 3 điểm $(1,1), (2,2), (3,3)$.
+   - Sai số tại mọi điểm đều bằng $0$.
+   - $J(1) = \frac{1}{2 \times 3} (0^2 + 0^2 + 0^2) = 0$.
+   - Điểm trên đồ thị $J$: **$(w = 1, J = 0)$** $\rightarrow$ **Điểm cực tiểu hoàn hảo!**
+
+2. **Khi chọn $w = 0.5$:**
+   - $f(x) = 0.5x$ (đường thẳng thoải hơn).
+   - Điểm 1 ($x=1$): $f(1) = 0.5 \implies$ sai số: $(0.5 - 1)^2 = 0.25$.
+   - Điểm 2 ($x=2$): $f(2) = 1.0 \implies$ sai số: $(1.0 - 2)^2 = 1.00$.
+   - Điểm 3 ($x=3$): $f(3) = 1.5 \implies$ sai số: $(1.5 - 3)^2 = 2.25$.
+   - Tổng sai số: $0.25 + 1.00 + 2.25 = 3.5$.
+   - $J(0.5) = \frac{3.5}{2 \times 3} = \frac{3.5}{6} \approx 0.58$.
+   - Điểm trên đồ thị $J$: **$(w = 0.5, J \approx 0.58)$**.
+
+3. **Khi chọn $w = 0$:**
+   - $f(x) = 0$ (đường nằm ngang trùng trục hoành).
+   - Tổng bình phương sai số: $1^2 + 2^2 + 3^2 = 14$.
+   - $J(0) = \frac{14}{6} \approx 2.33$.
+   - Điểm trên đồ thị $J$: **$(w = 0, J \approx 2.33)$**.
+
+4. **Khi chọn $w = -0.5$:**
+   - $f(x) = -0.5x$ (đường dốc ngược xuống).
+   - $J(-0.5) \approx 5.25$ (sai số rất lớn).
+
+### 💡 Kết luận trực giác cốt lõi:
+- Đồ thị của $J(w)$ có hình dạng **Parabol (hình cái chảo / chữ U)**.
+- Mỗi giá trị tham số $w$ quyết định một đường thẳng $f(x)$ bên trái, tương ứng với **một điểm duy nhất** trên đồ thị $J(w)$ bên phải.
+- Đường thẳng càng khớp sát dữ liệu $\rightarrow$ Giá trị $J(w)$ càng nằm sâu xuống đáy chữ U.
+- Tại đáy thung lũng ($w = 1$), hàm chi phí đạt cực tiểu $J = 0$.
+
+
 
 
 
