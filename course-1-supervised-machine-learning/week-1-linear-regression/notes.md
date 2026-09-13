@@ -207,6 +207,30 @@ Hãy xác định các bài toán sau thuộc loại học máy nào:
 - **Practice Labs / Graded Assignments (Bắt đầu từ tuần 2):**
   - Học viên sẽ tự tay viết thêm code logic thuật toán vào các ô trống quy định để nộp bài chấm điểm.
 
+---
+
+## 9. Linear Regression: Part 1 — Model & Notations (Mô hình Hồi quy tuyến tính & Ký hiệu chuẩn)
+
+### 📈 Linear Regression là gì?
+- Là việc **khớp một đường thẳng (fitting a straight line)** vào tập dữ liệu quan sát được.
+- Là thuật toán học máy phổ biến và nền tảng nhất trên thế giới. Mọi nguyên lý toán học và tư duy ở đây sẽ được tái sử dụng trong các mô hình phức tạp hơn (Neural Networks / Deep Learning).
+
+### 📐 Ký hiệu toán học quy chuẩn trong Machine Learning (Terminology & Notation)
+| Ký hiệu | Tên gọi tiếng Anh | Tên gọi tiếng Việt | Ví dụ trong bài toán giá nhà Portland |
+| :---: | :--- | :--- | :--- |
+| **$x$** | Input variable / Feature | Biến đầu vào / Đặc trưng | Diện tích căn nhà ($2104\text{ sq ft}$) |
+| **$y$** | Output variable / Target | Biến đầu ra / Mục tiêu | Giá bán căn nhà ($\$400k$) |
+| **$m$** | Number of training examples | Tổng số mẫu huấn luyện | $m = 47$ căn nhà trong bảng dữ liệu |
+| **$(x, y)$** | Single training example | Một mẫu huấn luyện đơn lẻ | Cặp giá trị $(2104, 400)$ |
+| **$(x^{(i)}, y^{(i)})$** | $i^{\text{th}}$ training example | Mẫu huấn luyện thứ $i$ (dòng thứ $i$) | $(x^{(1)}, y^{(1)}) = (2104, 400)$ |
+
+### ⚠️ Lưu ý sống còn về ký hiệu chỉ số trên $(i)$:
+- Ký hiệu $x^{(i)}$ có dấu ngoặc tròn là **chỉ số dòng thứ $i$ trong bảng dữ liệu (index into training set)**.
+- **TUYỆT ĐỐI KHÔNG PHẢI LŨY THỪA / SỐ MŨ (NOT exponentiation)**.
+  - $x^{(2)}$ là đặc trưng của ngôi nhà thứ 2 trong bảng, KHÔNG PHẢI $x^2$ (bình phương).
+  - $y^{(i)}$ là giá bán thực tế của ngôi nhà thứ $i$.
+
+
 
 
 
