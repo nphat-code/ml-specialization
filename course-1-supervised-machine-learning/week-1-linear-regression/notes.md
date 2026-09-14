@@ -348,6 +348,32 @@ Giả sử tập dữ liệu có $m = 3$ điểm: $(1, 1), (2, 2), (3, 3)$.
 - Đường thẳng càng khớp sát dữ liệu $\rightarrow$ Giá trị $J(w)$ càng nằm sâu xuống đáy chữ U.
 - Tại đáy thung lũng ($w = 1$), hàm chi phí đạt cực tiểu $J = 0$.
 
+---
+
+## 13. Visualizing the Cost Function (Trực quan hóa Hàm Chi Phí qua Đồ thị 3D & Contour Plot)
+
+Khi đưa cả 2 tham số $w$ và $b$ trở lại:
+$$f_{w,b}(x) = w \cdot x + b$$
+Hàm chi phí bây giờ phụ thuộc vào cả 2 tham số:
+$$J(w, b) = \frac{1}{2m} \sum_{i=1}^m (f_{w,b}(x^{(i)}) - y^{(i)})^2$$
+
+![Đồ thị 3D Mặt cong và Bản đồ đường đồng mức Contour Plot](cost_3d_contour.png)
+
+### 🥣 1. Đồ thị Mặt cong 3D (3D Surface Plot):
+- Hai trục nằm ngang ở đáy là tham số $w$ (hệ số góc) và $b$ (điểm cắt trục tung).
+- Trục dựng đứng là giá trị hàm chi phí $J(w, b)$.
+- **Hình dạng đặc trưng:** Một **chiếc bát ngửa (Soup Bowl) hoặc chiếc võng (Hammock)** trong không gian 3 chiều.
+- Mỗi điểm $(w, b)$ trên mặt đáy sẽ có một độ cao tương ứng là $J(w, b)$.
+- Điểm thấp nhất ở đáy bát chính là **cặp tham số tối ưu $(w, b)$** giúp mô hình đạt sai số nhỏ nhất.
+
+### 🗺️ 2. Bản đồ Đường đồng mức (Contour Plot / Topographical Map):
+- Tương tự bản đồ địa hình thể hiện độ cao của núi (như núi Phú Sĩ nhìn từ trên máy bay xuống).
+- Chiếu các lát cắt ngang qua chiếc bát 3D xuống mặt phẳng 2 chiều $(w, b)$. Mỗi lát cắt tạo thành một **đường vòng elip (Oval / Ellipse)**.
+- **Tính chất cốt lõi của đường đồng mức:**
+  - Mọi cặp tham số $(w, b)$ nằm trên **CÙNG MỘT ĐƯỜNG ELIP** đều có **CÙNG MỘT ĐỘ CAO**, nghĩa là có **CÙNG GIÁ TRỊ CHI PHÍ $J(w, b)$** (dù giá trị $w$ và $b$ của chúng khác nhau).
+  - **Tâm của các vòng elip đồng tâm (vòng nhỏ nhất ở trong cùng):** Chính là **đáy của chiếc bát 3D**, nơi chi phí $J(w, b)$ đạt cực tiểu (Minimum Cost)!
+
+
 
 
 
