@@ -313,17 +313,8 @@ Tìm cặp giá trị $(w, b)$ sao cho hàm chi phí $J(w, b)$ đạt giá trị
 ### 📊 Mối liên hệ giữa 2 đồ thị song song (Side-by-side Visuals):
 Giả sử tập dữ liệu có $m = 3$ điểm: $(1, 1), (2, 2), (3, 3)$.
 
-```text
-    Đồ thị Mô hình f(x)             Đồ thị Hàm chi phí J(w)
-          (x vs y)                           (w vs J(w))
+![Minh họa trực quan mô hình f(x) và hàm chi phí J(w)](cost_function_intuition.png)
 
-   y ^                                  J(w) ^
-   3 |       *(3,3)                        6 |      * (w=-0.5, J≈5.25)
-   2 |    *(2,2)                           4 |
-   1 | *(1,1)                              2 |   * (w=0, J≈2.33)
-     +─────────────> x                     0 |───*──────*─────────> w
-     0   1   2   3                           -0.5 0    0.5  1 (w=1, J=0: Đáy Parabol)
-```
 
 ### 🔢 Tính toán chi tiết qua từng giá trị của $w$:
 1. **Khi chọn $w = 1$:**
