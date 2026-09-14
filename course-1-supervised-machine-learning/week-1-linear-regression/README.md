@@ -34,7 +34,7 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 - [x] [Visualizing the cost function](https://www.coursera.org/learn/machine-learning/lecture/QI1h6/visualizing-the-cost-function) *(8 min)* — Đồ thị 3D và Bản đồ đường đồng mức (Contour plots) của $J(w, b)$
 - [x] [Visualization examples](https://www.coursera.org/learn/machine-learning/lecture/Ov8Zt/visualization-examples) *(6 min)* — So sánh các đường thẳng $f(x)$ với vị trí trên Contour Plot
 - [x] [Optional lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function) *(Lab)*
-- [ ] **Practice quiz: Regression** *(10 min)*
+- [x] **Practice quiz: Regression** *(10 min)*
 
 ---
 
