@@ -15,6 +15,8 @@ Khi học tập và trao đổi trong repository này, AI Assistant tuân theo c
    - **Bước 1 (Trước khi xem):** AI cung cấp **Preview nhanh (30s - 1 phút)** nêu rõ vấn đề cần giải quyết và các khái niệm/từ khóa then chốt cần chú ý.
    - **Bước 2 (Trong lúc xem):** Người học xem video bài giảng của Thầy Andrew Ng để nạp trực giác qua hình vẽ và lời giảng.
    - **Bước 3 (Sau khi xem):** Người học gửi transcript $\rightarrow$ AI tổng hợp **Notes chi tiết** (công thức LaTeX, bảng so sánh), cập nhật checklist và tự động commit/push GitHub.
+6. **Trực quan hóa bằng Biểu đồ Đồ họa (High-res Visual Charts):** Bất cứ khi nào bài học đề cập đến đồ thị, hàm số hoặc không gian tham số (3D surface, contour plot, gradient descent convergence...), AI sẽ tự động viết script Python (`matplotlib`/`numpy`) để xuất file ảnh `.png` chất lượng cao, nhúng vào notes và đính kèm link để người học quan sát trực quan nhất (không vẽ dạng chữ ASCII thô).
+
 
 
 ---
