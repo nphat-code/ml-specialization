@@ -32,7 +32,7 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 - [x] [Cost function formula](https://www.coursera.org/learn/machine-learning/lecture/1Z0TT/cost-function-formula) *(9 min)* — Hàm mất mát bình phương trung bình: $J(w, b) = \frac{1}{2m} \sum_{i=1}^m (f_{w,b}(x^{(i)}) - y^{(i)})^2$
 - [x] [Cost function intuition](https://www.coursera.org/learn/machine-learning/lecture/FthLz/cost-function-intuition) *(15 min)* — Trực giác khi $b=0$, đồ thị $J(w)$ parabol hình lòng chảo
 - [x] [Visualizing the cost function](https://www.coursera.org/learn/machine-learning/lecture/QI1h6/visualizing-the-cost-function) *(8 min)* — Đồ thị 3D và Bản đồ đường đồng mức (Contour plots) của $J(w, b)$
-- [ ] [Visualization examples](https://www.coursera.org/learn/machine-learning/lecture/Ov8Zt/visualization-examples) *(6 min)*
+- [x] [Visualization examples](https://www.coursera.org/learn/machine-learning/lecture/Ov8Zt/visualization-examples) *(6 min)* — So sánh các đường thẳng $f(x)$ với vị trí trên Contour Plot
 - [ ] [Optional lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function) *(Lab)*
 - [ ] **Practice quiz: Regression** *(10 min)*
 

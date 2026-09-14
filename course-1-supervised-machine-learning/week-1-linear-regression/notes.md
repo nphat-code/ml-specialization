@@ -373,6 +373,40 @@ $$J(w, b) = \frac{1}{2m} \sum_{i=1}^m (f_{w,b}(x^{(i)}) - y^{(i)})^2$$
   - Mọi cặp tham số $(w, b)$ nằm trên **CÙNG MỘT ĐƯỜNG ELIP** đều có **CÙNG MỘT ĐỘ CAO**, nghĩa là có **CÙNG GIÁ TRỊ CHI PHÍ $J(w, b)$** (dù giá trị $w$ và $b$ của chúng khác nhau).
   - **Tâm của các vòng elip đồng tâm (vòng nhỏ nhất ở trong cùng):** Chính là **đáy của chiếc bát 3D**, nơi chi phí $J(w, b)$ đạt cực tiểu (Minimum Cost)!
 
+---
+
+## 14. Visualization Examples (So sánh trực quan các giá trị w, b trên Contour Plot)
+
+![So sánh các đường thẳng f(x) với các điểm tương ứng trên Contour Plot](contour_examples.png)
+
+### 🔍 Bài học trực giác qua 3 trường hợp:
+
+1. **Điểm màu đỏ (Khớp kém — Nằm ở vòng elip ngoài xa):**
+   - Chọn $w = 0.5, b = 5.0$.
+   - Đường thẳng màu đỏ bị lệch hẳn lên trên so với các điểm dữ liệu thật $\rightarrow$ Sai số giữa $\hat{y}$ và $y$ rất lớn.
+   - Trên bản đồ Contour Plot: Điểm đỏ nằm tít ở vòng elip ngoài cùng với chi phí **$J = 7.17$**.
+
+2. **Điểm màu vàng (Khớp trung bình — Tiến gần hơn vào trong):**
+   - Chọn $w = 1.2, b = 2.8$.
+   - Đường thẳng màu vàng áp sát dữ liệu tốt hơn.
+   - Trên Contour Plot: Điểm vàng đi vào các vòng elip bên trong với chi phí giảm xuống còn **$J = 1.01$**.
+
+3. **Điểm màu xanh lá (Khớp tối ưu — Nằm tại tâm của vòng elip trong cùng):**
+   - Chọn $w = 2.0, b = 1.0$.
+   - Đường thẳng màu xanh đi xuyên qua chính xác các điểm dữ liệu $\rightarrow$ Sai số bình phương trung bình xấp xỉ bằng 0.
+   - Trên Contour Plot: Điểm xanh nằm **chính xác tại tâm của các đường đồng mức (Đáy cực tiểu)** với chi phí **$J = 0.00$**!
+
+---
+
+### 🚀 Nguồn gốc ra đời của Thuật toán GRADIENT DESCENT:
+- Trong ví dụ trên, ta chọn được điểm tối ưu nhờ nhìn bằng mắt trên đồ thị 2 tham số.
+- Nhưng trong thực tế:
+  - Dữ liệu thực tế có hàng ngàn mẫu dữ liệu phức tạp.
+  - Các mô hình AI hiện đại (Neural Networks, Deep Learning) có hàng triệu đến hàng tỷ tham số $(w_1, w_2, ..., w_n, b)$. **Không một ai có thể vẽ hay nhìn bằng mắt để đoán mò điểm cực tiểu!**
+- **Giải pháp:** Ta cần một giải thuật toán học tự động bắt đầu từ một điểm ngẫu nhiên bất kỳ, sau đó tự "dò dẫm" từng bước lăn dần xuống đáy cực tiểu của chiếc bát.
+- Giải thuật tối thượng đó chính là: **GRADIENT DESCENT (Thuật toán hạ độ dốc)**!
+
+
 
 
 
