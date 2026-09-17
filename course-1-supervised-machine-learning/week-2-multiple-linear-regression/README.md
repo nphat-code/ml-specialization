@@ -9,9 +9,9 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 - [x] [Multiple features](https://www.coursera.org/learn/machine-learning/lecture/gFuSx/multiple-features) *(9 min)* — Ký hiệu toán học ma trận: $n$ features, vector hàng $\mathbf{x}^{(i)}$, mô hình vector $f_{\mathbf{w},b}(\mathbf{x}) = \mathbf{w} \cdot \mathbf{x} + b$
 - [x] [Vectorization part 1](https://www.coursera.org/learn/machine-learning/lecture/ismjc/vectorization-part-1) *(6 min)* — Vì sao cần Vectorization? So sánh vòng lặp `for` vs `np.dot(w, x) + b`
 - [x] [Vectorization part 2](https://www.coursera.org/learn/machine-learning/lecture/p2Nqv/vectorization-part-2) *(6 min)* — Tận dụng phần cứng song song (SIMD CPU/GPU) & Phép tính ma trận - vector
-- [ ] [Optional lab: Python, NumPy and vectorization](https://www.coursera.org/learn/machine-learning/ungradedLab/zadmO/optional-lab-python-numpy-and-vectorization) *(Lab thực hành)*
+- [x] [Optional lab: Python, NumPy and vectorization](https://www.coursera.org/learn/machine-learning/ungradedLab/zadmO/optional-lab-python-numpy-and-vectorization) *(Lab thực hành)*
 - [x] [Gradient descent for multiple linear regression](https://www.coursera.org/learn/machine-learning/lecture/ltMMp/gradient-descent-for-multiple-linear-regression) *(7 min)* — Cập nhật đồng thời $n$ tham số $w_j$ và $b$
-- [ ] [Optional Lab: Multiple linear regression](https://www.coursera.org/learn/machine-learning/ungradedLab/7GEJh/optional-lab-multiple-linear-regression) *(Lab thực hành)*
+- [x] [Optional Lab: Multiple linear regression](https://www.coursera.org/learn/machine-learning/ungradedLab/7GEJh/optional-lab-multiple-linear-regression) *(Lab thực hành)*
 - [ ] **Practice quiz: Multiple linear regression** *(15 min)*
 
 ---
