@@ -45,5 +45,5 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 - [x] [Learning rate](https://www.coursera.org/learn/machine-learning/lecture/OoP3Y/learning-rate) *(9 min)* — Tác động của $\alpha$ quá nhỏ vs $\alpha$ quá lớn (divergence)
 - [x] [Gradient descent for linear regression](https://www.coursera.org/learn/machine-learning/lecture/lgSMj/gradient-descent-for-linear-regression) *(6 min)* — Công thức đạo hàm cụ thể của hàm bình phương
 - [x] [Running gradient descent](https://www.coursera.org/learn/machine-learning/lecture/349Ay/running-gradient-descent) *(5 min)* — Batch Gradient Descent
-- [ ] [Optional lab: Gradient descent](https://www.coursera.org/learn/machine-learning/ungradedLab/lE1al/optional-lab-gradient-descent) *(Lab)*
-- [ ] **Practice quiz: Train the model with gradient descent** *(10 min)*
+- [x] [Optional lab: Gradient descent](https://www.coursera.org/learn/machine-learning/ungradedLab/lE1al/optional-lab-gradient-descent) *(Lab)*
+- [x] **Practice quiz: Train the model with gradient descent** *(10 min)*

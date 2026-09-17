@@ -22,12 +22,12 @@ Khi học tập và trao đổi trong repository này, AI Assistant tuân theo c
 ## 🗺️ Lộ trình & Bảng Theo Dõi Tiến Độ (Progress Tracker)
 
 ### Course 1: Supervised Machine Learning: Regression and Classification
-- [ ] **Week 1: Introduction to Machine Learning & Linear Regression**
+- [x] **Week 1: Introduction to Machine Learning & Linear Regression**
   - [x] Khái niệm Supervised vs Unsupervised Learning
   - [x] Model representation: $f_{w, b}(x) = wx + b$
   - [x] Cost function: Squared error cost function $J(w, b)$
   - [x] Gradient descent algorithm & Learning rate $\alpha$
-  - [ ] Lab: Linear Regression with one variable
+  - [x] Lab: Linear Regression with one variable
 - [ ] **Week 2: Multiple Linear Regression & Practical Tricks**
   - [ ] Vectorized multiple linear regression: $f_{\mathbf{w}, b}(\mathbf{x}) = \mathbf{w} \cdot \mathbf{x} + b$
   - [ ] Feature scaling & Mean normalization (Z-score normalization)
