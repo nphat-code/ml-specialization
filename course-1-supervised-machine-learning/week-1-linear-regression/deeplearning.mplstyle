@@ -1,0 +1,8 @@
+# Matplotlib style file for DeepLearning.AI ML Specialization
+lines.linewidth : 2
+lines.markersize : 8
+axes.titlesize : 16
+axes.labelsize : 14
+xtick.labelsize : 12
+ytick.labelsize : 12
+figure.autolayout : False
