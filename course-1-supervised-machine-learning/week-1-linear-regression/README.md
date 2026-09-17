@@ -39,7 +39,7 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 ---
 
 ### 📌 4. Train the model with gradient descent
-- [ ] [Gradient descent](https://www.coursera.org/learn/machine-learning/lecture/2f2PA/gradient-descent) *(8 min)* — Ý tưởng lăn bóng xuống thung lũng tìm cực tiểu
+- [x] [Gradient descent](https://www.coursera.org/learn/machine-learning/lecture/2f2PA/gradient-descent) *(8 min)* — Ý tưởng lăn bóng xuống thung lũng & Cực tiểu cục bộ (Local Minima)
 - [ ] [Implementing gradient descent](https://www.coursera.org/learn/machine-learning/lecture/TXDBu/implementing-gradient-descent) *(9 min)* — Cập nhật đồng thời (Simultaneous update): $w := w - \alpha \frac{\partial J}{\partial w}$, $b := b - \alpha \frac{\partial J}{\partial b}$
 - [ ] [Gradient descent intuition](https://www.coursera.org/learn/machine-learning/lecture/2EoN6/gradient-descent-intuition) *(7 min)* — Bản chất tiếp tuyến và chiều di chuyển
 - [ ] [Learning rate](https://www.coursera.org/learn/machine-learning/lecture/OoP3Y/learning-rate) *(9 min)* — Tác động của $\alpha$ quá nhỏ vs $\alpha$ quá lớn (divergence)

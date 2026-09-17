@@ -403,8 +403,33 @@ $$J(w, b) = \frac{1}{2m} \sum_{i=1}^m (f_{w,b}(x^{(i)}) - y^{(i)})^2$$
 - Nhưng trong thực tế:
   - Dữ liệu thực tế có hàng ngàn mẫu dữ liệu phức tạp.
   - Các mô hình AI hiện đại (Neural Networks, Deep Learning) có hàng triệu đến hàng tỷ tham số $(w_1, w_2, ..., w_n, b)$. **Không một ai có thể vẽ hay nhìn bằng mắt để đoán mò điểm cực tiểu!**
-- **Giải pháp:** Ta cần một giải thuật toán học tự động bắt đầu từ một điểm ngẫu nhiên bất kỳ, sau đó tự "dò dẫm" từng bước lăn dần xuống đáy cực tiểu của chiếc bát.
 - Giải thuật tối thượng đó chính là: **GRADIENT DESCENT (Thuật toán hạ độ dốc)**!
+
+---
+
+## 15. Gradient Descent (Thuật toán Hạ độ dốc — Trực giác lăn dốc & Cực tiểu cục bộ)
+
+![Trực quan hóa thuật toán Gradient Descent và so sánh Hàm lồi vs Phi lồi](gradient_descent_intuition.png)
+
+### 🏞️ Trực giác "Người leo núi đi xuống thung lũng":
+1. **Khởi tạo (Initial guess):**
+   - Chọn một vị trí xuất phát bất kỳ cho các tham số $(w, b)$. Đối với Linear Regression, ta thường bắt đầu tại $w = 0, b = 0$.
+2. **Xác định hướng dốc nhất (Steepest Descent):**
+   - Đứng tại vị trí hiện tại, bạn xoay 360 độ xung quanh và tìm hướng nào có **độ dốc đi xuống nhanh nhất** (direction of steepest descent).
+3. **Bước một bước nhỏ (Baby step):**
+   - Bước một bước nhỏ theo hướng dốc đó.
+4. **Lặp lại (Iterate):**
+   - Từ vị trí mới, tiếp tục nhìn quanh 360 độ và bước tiếp cho đến khi bạn chạm đến **đáy thung lũng (Cực tiểu / Minimum)**, nơi xung quanh không còn hướng nào dốc xuống nữa.
+
+### 🏔️ Tính chất Cực tiểu cục bộ (Local Minima) vs Cực tiểu toàn cục (Global Minimum):
+- **Hàm phi lồi (Non-convex — ví dụ Neural Networks / Deep Learning):**
+  - Địa hình có rất nhiều đỉnh đồi và thung lũng khác nhau (bên trái ảnh).
+  - Xuất phát ở điểm 1 sẽ lăn vào **Thung lũng 1 (Local Min 1)**.
+  - Chỉ cần dịch điểm xuất phát sang bên phải một chút $\rightarrow$ bạn sẽ lăn vào **Thung lũng 2 (Local Min 2)**.
+- **Hàm lồi hình chiếc bát (Convex Bowl — Hồi quy tuyến tính Linear Regression):**
+  - Hàm bình phương sai số (Squared error cost function) luôn có dạng một **chiếc bát lồi duy nhất** (bên phải ảnh).
+  - **Ưu điểm tuyệt đối:** Dù bạn bắt đầu ở bất kỳ điểm nào (A, B, hay C), thuật toán Gradient Descent **LUÔN LUÔN hội tụ về CÙNG MỘT ĐÁY TOÀN CỤC DUY NHẤT (Global Minimum)**!
+
 
 
 
