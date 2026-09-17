@@ -430,6 +430,86 @@ $$J(w, b) = \frac{1}{2m} \sum_{i=1}^m (f_{w,b}(x^{(i)}) - y^{(i)})^2$$
   - Hàm bình phương sai số (Squared error cost function) luôn có dạng một **chiếc bát lồi duy nhất** (bên phải ảnh).
   - **Ưu điểm tuyệt đối:** Dù bạn bắt đầu ở bất kỳ điểm nào (A, B, hay C), thuật toán Gradient Descent **LUÔN LUÔN hội tụ về CÙNG MỘT ĐÁY TOÀN CỤC DUY NHẤT (Global Minimum)**!
 
+---
+
+## 16. Implementing Gradient Descent (Công thức cập nhật & Quy tắc Cập nhật đồng thời)
+
+### 📐 Công thức toán học cốt lõi:
+Lặp lại các bước sau cho đến khi hội tụ (Convergence):
+$$\text{repeat until convergence: } \{$$
+$$w := w - \alpha \frac{\partial}{\partial w} J(w, b)$$
+$$b := b - \alpha \frac{\partial}{\partial b} J(w, b)$$
+$$\}$$
+
+- **Ký hiệu `:=` :** Phép gán giá trị (Assignment operator) trong toán tin.
+- **$\alpha$ (alpha — Learning Rate / Tỷ lệ học):** Số thực dương quyết định độ dài của mỗi bước nhảy.
+- **$\frac{\partial}{\partial w} J(w, b)$ và $\frac{\partial}{\partial b} J(w, b)$:** Các đạo hàm riêng (Partial derivatives) thể hiện độ dốc và hướng đi dốc nhất.
+
+### ⚠️ Bẫy thi trắc nghiệm sống còn: Simultaneous Update (Cập nhật đồng thời)
+Khi lập trình Gradient Descent, bạn **bắt buộc phải cập nhật $w$ và $b$ cùng một thời điểm**:
+
+| Cách viết CHUẨN (Simultaneous Update) | Cách viết SAI (Incorrect - Do NOT do this) |
+| :--- | :--- |
+| `temp_w = w - alpha * d_w` | `w = w - alpha * d_w` *(cập nhật w trước)* |
+| `temp_b = b - alpha * d_b` | `b = b - alpha * d_b` *(dùng w mới tính b -> SAI)* |
+| `w = temp_w` | |
+| `b = temp_b` | |
+
+---
+
+## 17. Gradient Descent Intuition (Trực giác về Đạo hàm & Chiều di chuyển)
+
+Xét mô hình rút gọn $J(w)$ để quan sát trực giác:
+
+1. **Khi điểm hiện tại nằm bên phải đáy cực tiểu (Đạo hàm DƯƠNG):**
+   - Tiếp tuyến dốc lên bên phải $\implies \frac{d}{dw} J(w) > 0$.
+   - $w := w - \alpha \times (\text{số dương}) \implies$ **$w$ giảm đi**.
+   - $\rightarrow$ $w$ tự động **lùi về bên trái** để tiến về đáy!
+2. **Khi điểm hiện tại nằm bên trái đáy cực tiểu (Đạo hàm ÂM):**
+   - Tiếp tuyến dốc xuống $\implies \frac{d}{dw} J(w) < 0$.
+   - $w := w - \alpha \times (\text{số âm}) = w + \alpha \times |\dots| \implies$ **$w$ tăng lên**.
+   - $\rightarrow$ $w$ tự động **tiến sang bên phải** để về đáy!
+3. **Khi đã chạm đúng đáy cực tiểu (Cực trị):**
+   - Tiếp tuyến nằm ngang $\implies \frac{d}{dw} J(w) = 0$.
+   - $w := w - \alpha \times 0 = w \implies$ **$w$ không đổi (Hội tụ thành công)**!
+
+---
+
+## 18. Learning Rate $\alpha$ (Tác động của Tỷ lệ học)
+
+![Minh họa 3 trường hợp Learning Rate](learning_rate_effects.png)
+
+1. **Nếu $\alpha$ quá nhỏ (Too small):**
+   - Bước đi cực kỳ chậm chạp, phải mất hàng chục ngàn bước lặp mới tới được đáy.
+2. **Nếu $\alpha$ quá lớn (Too large):**
+   - Bước nhảy quá dài, nhảy vọt qua đáy thung lũng (Overshoot) và ngày càng bay xa khỏi đáy $\rightarrow$ **Phân kỳ (Divergence)**, hàm chi phí phát nổ!
+3. **Tính chất tự động thu hẹp bước nhảy (Automatic Step-size Reduction):**
+   - Khi càng tiến gần tới đáy cực tiểu, độ dốc (đạo hàm) sẽ **tự động thoải dần và nhỏ lại**.
+   - Do đó, giá trị $\alpha \frac{d}{dw} J(w)$ sẽ **tự động nhỏ dần** mà không cần bạn phải giảm $\alpha$ thủ công trong quá trình chạy!
+
+---
+
+## 19. Gradient Descent for Linear Regression (Đạo hàm cụ thể cho Hồi quy tuyến tính)
+
+Bằng cách áp dụng quy tắc đạo hàm hợp (Chain rule) cho hàm bình phương sai số:
+$$J(w, b) = \frac{1}{2m} \sum_{i=1}^m (wx^{(i)} + b - y^{(i)})^2$$
+
+Ta thu được công thức đạo hàm riêng cụ thể:
+$$\frac{\partial}{\partial w} J(w, b) = \frac{1}{m} \sum_{i=1}^m (f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)}$$
+$$\frac{\partial}{\partial b} J(w, b) = \frac{1}{m} \sum_{i=1}^m (f_{w,b}(x^{(i)}) - y^{(i)})$$
+
+> 💡 **Vì sao ban đầu chia cho $2m$?** Vì khi đạo hàm biểu thức $(wx+b-y)^2$, số mũ 2 hạ xuống triệt tiêu vừa vặn với số 2 ở mẫu số, giúp công thức đạo hàm cuối cùng cực kỳ gọn gàng!
+
+---
+
+## 20. Batch Gradient Descent (Ý nghĩa thuật ngữ & Bản chất hội tụ)
+
+- **Thuật ngữ "Batch" (Theo lô / Toàn bộ):**
+  - Trong mỗi bước cập nhật đơn lẻ của $w$ và $b$, thuật toán tính tổng trên **TOÀN BỘ $m$ mẫu dữ liệu** của tập huấn luyện (thay vì chỉ lấy một vài mẫu con).
+- **Hội tụ đảm bảo (Global Convergence):**
+  - Vì hàm chi phí bình phương sai số của Hồi quy tuyến tính luôn luôn là **Hàm lồi (Convex)** dạng hình chiếc bát, Batch Gradient Descent luôn luôn được bảo đảm toán học sẽ tìm ra đúng **Cực tiểu toàn cục (Global Minimum)** duy nhất!
+
+
 
 
 

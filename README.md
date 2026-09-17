@@ -11,13 +11,11 @@ Khi học tập và trao đổi trong repository này, AI Assistant tuân theo c
 2. **Tư duy Vector hóa (NumPy Vectorization):** Luôn khuyến khích và hướng dẫn cách biểu diễn phép tính dưới dạng ma trận/vector thay vì dùng vòng lặp `for` lồng nhau.
 3. **Phương pháp gợi mở (Socratic Method):** Khi gặp bài lab hoặc câu hỏi quiz, trợ lý sẽ chỉ ra vị trí lỗi, đặt câu hỏi gợi mở và phân tích nguyên lý để người học tự làm chủ kiến thức, không spoil thẳng đáp án.
 4. **Clean Code & Thực hành chuẩn:** Code được viết rõ ràng, có chú thích kích thước ma trận `(m, n)` hoặc `(m, 1)` để tránh lỗi `shape mismatch`.
-5. **Quy trình học 3 bước (3-Step Learning Loop):**
-   - **Bước 1 (Trước khi xem):** AI cung cấp **Preview nhanh (30s - 1 phút)** nêu rõ vấn đề cần giải quyết và các khái niệm/từ khóa then chốt cần chú ý.
-   - **Bước 2 (Trong lúc xem):** Người học xem video bài giảng của Thầy Andrew Ng để nạp trực giác qua hình vẽ và lời giảng.
-   - **Bước 3 (Sau khi xem):** Người học gửi transcript $\rightarrow$ AI tổng hợp **Notes chi tiết** (công thức LaTeX, bảng so sánh), cập nhật checklist và tự động commit/push GitHub.
+5. **Chế độ Học Tốc Độ Cao & Thực Chiến (Fast-Track Learning Mode):**
+   - Người học **không cần xem hết từng video hay copy transcript thủ công**.
+   - AI chủ động nắm trọn 100% giáo trình gốc của Thầy Andrew Ng, đúc kết cô đọng bản chất lý thuyết, công thức toán, bẫy trắc nghiệm cho từng cụm bài học.
+   - Người học đọc nhanh 2-3 phút đúc kết của AI, sau đó vào thẳng bài Lab thực hành và làm Practice Quiz/Graded Assignment để tối ưu thời gian.
 6. **Trực quan hóa bằng Biểu đồ Đồ họa (High-res Visual Charts):** Bất cứ khi nào bài học đề cập đến đồ thị, hàm số hoặc không gian tham số (3D surface, contour plot, gradient descent convergence...), AI sẽ tự động viết script Python (`matplotlib`/`numpy`) để xuất file ảnh `.png` chất lượng cao, nhúng vào notes và đính kèm link để người học quan sát trực quan nhất (không vẽ dạng chữ ASCII thô).
-
-
 
 ---
 
@@ -28,7 +26,7 @@ Khi học tập và trao đổi trong repository này, AI Assistant tuân theo c
   - [x] Khái niệm Supervised vs Unsupervised Learning
   - [x] Model representation: $f_{w, b}(x) = wx + b$
   - [x] Cost function: Squared error cost function $J(w, b)$
-  - [ ] Gradient descent algorithm & Learning rate $\alpha$
+  - [x] Gradient descent algorithm & Learning rate $\alpha$
   - [ ] Lab: Linear Regression with one variable
 - [ ] **Week 2: Multiple Linear Regression & Practical Tricks**
   - [ ] Vectorized multiple linear regression: $f_{\mathbf{w}, b}(\mathbf{x}) = \mathbf{w} \cdot \mathbf{x} + b$

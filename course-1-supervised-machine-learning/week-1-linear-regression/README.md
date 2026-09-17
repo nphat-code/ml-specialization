@@ -40,10 +40,10 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 
 ### 📌 4. Train the model with gradient descent
 - [x] [Gradient descent](https://www.coursera.org/learn/machine-learning/lecture/2f2PA/gradient-descent) *(8 min)* — Ý tưởng lăn bóng xuống thung lũng & Cực tiểu cục bộ (Local Minima)
-- [ ] [Implementing gradient descent](https://www.coursera.org/learn/machine-learning/lecture/TXDBu/implementing-gradient-descent) *(9 min)* — Cập nhật đồng thời (Simultaneous update): $w := w - \alpha \frac{\partial J}{\partial w}$, $b := b - \alpha \frac{\partial J}{\partial b}$
-- [ ] [Gradient descent intuition](https://www.coursera.org/learn/machine-learning/lecture/2EoN6/gradient-descent-intuition) *(7 min)* — Bản chất tiếp tuyến và chiều di chuyển
-- [ ] [Learning rate](https://www.coursera.org/learn/machine-learning/lecture/OoP3Y/learning-rate) *(9 min)* — Tác động của $\alpha$ quá nhỏ vs $\alpha$ quá lớn (divergence)
-- [ ] [Gradient descent for linear regression](https://www.coursera.org/learn/machine-learning/lecture/lgSMj/gradient-descent-for-linear-regression) *(6 min)* — Công thức đạo hàm cụ thể của hàm bình phương
-- [ ] [Running gradient descent](https://www.coursera.org/learn/machine-learning/lecture/349Ay/running-gradient-descent) *(5 min)* — Batch Gradient Descent
+- [x] [Implementing gradient descent](https://www.coursera.org/learn/machine-learning/lecture/TXDBu/implementing-gradient-descent) *(9 min)* — Cập nhật đồng thời (Simultaneous update): $w := w - \alpha \frac{\partial J}{\partial w}$, $b := b - \alpha \frac{\partial J}{\partial b}$
+- [x] [Gradient descent intuition](https://www.coursera.org/learn/machine-learning/lecture/2EoN6/gradient-descent-intuition) *(7 min)* — Bản chất tiếp tuyến và chiều di chuyển
+- [x] [Learning rate](https://www.coursera.org/learn/machine-learning/lecture/OoP3Y/learning-rate) *(9 min)* — Tác động của $\alpha$ quá nhỏ vs $\alpha$ quá lớn (divergence)
+- [x] [Gradient descent for linear regression](https://www.coursera.org/learn/machine-learning/lecture/lgSMj/gradient-descent-for-linear-regression) *(6 min)* — Công thức đạo hàm cụ thể của hàm bình phương
+- [x] [Running gradient descent](https://www.coursera.org/learn/machine-learning/lecture/349Ay/running-gradient-descent) *(5 min)* — Batch Gradient Descent
 - [ ] [Optional lab: Gradient descent](https://www.coursera.org/learn/machine-learning/ungradedLab/lE1al/optional-lab-gradient-descent) *(Lab)*
 - [ ] **Practice quiz: Train the model with gradient descent** *(10 min)*
