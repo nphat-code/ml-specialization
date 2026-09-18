@@ -28,12 +28,12 @@ Khi học tập và trao đổi trong repository này, AI Assistant tuân theo c
   - [x] Cost function: Squared error cost function $J(w, b)$
   - [x] Gradient descent algorithm & Learning rate $\alpha$
   - [x] Lab: Linear Regression with one variable
-- [ ] **Week 2: Multiple Linear Regression & Practical Tricks**
-  - [ ] Vectorized multiple linear regression: $f_{\mathbf{w}, b}(\mathbf{x}) = \mathbf{w} \cdot \mathbf{x} + b$
-  - [ ] Feature scaling & Mean normalization (Z-score normalization)
-  - [ ] Checking gradient descent for convergence & Learning rate selection
-  - [ ] Feature engineering & Polynomial regression
-  - [ ] Lab: Multiple Linear Regression
+- [x] **Week 2: Multiple Linear Regression & Practical Tricks**
+  - [x] Vectorized multiple linear regression: $f_{\mathbf{w}, b}(\mathbf{x}) = \mathbf{w} \cdot \mathbf{x} + b$
+  - [x] Feature scaling & Mean normalization (Z-score normalization)
+  - [x] Checking gradient descent for convergence & Learning rate selection
+  - [x] Feature engineering & Polynomial regression
+  - [x] Lab: Multiple Linear Regression
 - [ ] **Week 3: Classification & Logistic Regression**
   - [ ] Motivation for Logistic Regression & Sigmoid function $g(z)$
   - [ ] Decision boundary

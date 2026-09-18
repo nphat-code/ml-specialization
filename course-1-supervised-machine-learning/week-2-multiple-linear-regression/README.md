@@ -31,4 +31,4 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 ---
 
 ### 📌 3. Week 2 Practice Lab (Graded Programming Assignment)
-- [ ] **[Week 2 practice lab: Linear regression](https://www.coursera.org/learn/machine-learning/programming/jsE7w/week-2-practice-lab-linear-regression)** *(Bài tập lập trình tính điểm chính thức - 3h)*
+- [x] **[Week 2 practice lab: Linear regression](https://www.coursera.org/learn/machine-learning/programming/jsE7w/week-2-practice-lab-linear-regression)** *(Bài tập lập trình tính điểm chính thức - 3h)*
