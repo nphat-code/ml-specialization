@@ -25,12 +25,20 @@ def clean_notebook(file_path):
             for line in lines:
                 original = line
                 # 1. Convert \tag{X} to \quad (X) so equation numbers are preserved and KaTeX renders without error
-                line = re.sub(r'\\tag\{([^}]+)\}', r'\\quad (\1)', line)
-                line = re.sub(r'\\tag\*\{([^}]+)\}', r'\\quad \1', line)
+                line = re.sub(r'\\tag\*?\{([^}]+)\}', r'\\quad (\1)', line)
 
-                # 2. Replace \newline inside math
-                line = line.replace('\\newline\\;', '\\\\')
-                line = line.replace('\\newline', '\\\\')
+                # 2. Convert align/align* to aligned
+                line = line.replace(r'\begin{align*}', r'\begin{aligned}')
+                line = line.replace(r'\end{align*}', r'\end{aligned}')
+                line = line.replace(r'\begin{align}', r'\begin{aligned}')
+                line = line.replace(r'\end{align}', r'\end{aligned}')
+
+                # 3. Replace \newline inside math
+                line = line.replace('\\newline\\;', '\\\\ ')
+                line = line.replace('\\newline', '\\\\ ')
+
+                # 4. Replace \mbox with \text
+                line = line.replace(r'\mbox', r'\text')
 
                 if line != original:
                     cell_changed = True
