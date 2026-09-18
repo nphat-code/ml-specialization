@@ -21,7 +21,7 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 - [x] [Feature scaling part 2](https://www.coursera.org/learn/machine-learning/lecture/akapu/feature-scaling-part-2) *(7 min)* — Các phương pháp: Max scaling, Mean normalization, Z-score normalization
 - [x] [Checking gradient descent for convergence](https://www.coursera.org/learn/machine-learning/lecture/rOTkB/checking-gradient-descent-for-convergence) *(5 min)* — Đồ thị Learning Curve $J$ theo số vòng lặp & $\epsilon$-test (Automatic convergence test)
 - [x] [Choosing the learning rate](https://www.coursera.org/learn/machine-learning/lecture/10ZVv/choosing-the-learning-rate) *(6 min)* — Chiến thuật thử nghiệm $\alpha$ theo cấp số nhân: $..., 0.001, 0.003, 0.01, 0.03, 0.1, ...$
-- [ ] [Optional Lab: Feature scaling and learning rate](https://www.coursera.org/learn/machine-learning/ungradedLab/kIf25/optional-lab-feature-scaling-and-learning-rate) *(Lab thực hành)*
+- [x] [Optional Lab: Feature scaling and learning rate](https://www.coursera.org/learn/machine-learning/ungradedLab/kIf25/optional-lab-feature-scaling-and-learning-rate) *(Lab thực hành)*
 - [x] [Feature engineering](https://www.coursera.org/learn/machine-learning/lecture/dgZYR/feature-engineering) *(3 min)* — Tự thiết kế đặc trưng mới (ví dụ: Diện tích = Chiều rộng $\times$ Chiều sâu)
 - [x] [Polynomial regression](https://www.coursera.org/learn/machine-learning/lecture/OnGhN/polynomial-regression) *(5 min)* — Hồi quy đa thức: Uốn cong hàm dự đoán với $x^2, x^3, \sqrt{x}$
 - [ ] [Optional lab: Feature engineering and Polynomial regression](https://www.coursera.org/learn/machine-learning/ungradedLab/Xat0X/optional-lab-feature-engineering-and-polynomial-regression) *(Lab thực hành)*
