@@ -6,12 +6,12 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 ---
 
 ### 📌 1. Classification with Logistic Regression
-- [ ] [Motivations](https://www.coursera.org/learn/machine-learning/lecture/Z95y4/motivations) *(7 min)* — Vì sao Linear Regression thất bại khi phân loại nhị phân ($y \in \{0, 1\}$)?
-- [ ] [Logistic regression](https://www.coursera.org/learn/machine-learning/lecture/0m3X4/logistic-regression) *(8 min)* — Hàm Sigmoid/Logistic: $g(z) = \frac{1}{1 + e^{-z}}$, mô hình xác suất $f_{\mathbf{w},b}(\mathbf{x}) = g(\mathbf{w} \cdot \mathbf{x} + b) = P(y=1|\mathbf{x})$
-- [ ] [Decision boundary](https://www.coursera.org/learn/machine-learning/lecture/WqEeh/decision-boundary) *(8 min)* — Ranh giới quyết định tuyến tính & phi tuyến: $\mathbf{w} \cdot \mathbf{x} + b = 0$
-- [ ] [Optional lab: Classification](https://www.coursera.org/learn/machine-learning/ungradedLab/2hQ2p/optional-lab-classification) *(Lab thực hành)*
-- [ ] [Optional lab: Sigmoid function and logistic regression](https://www.coursera.org/learn/machine-learning/ungradedLab/5QjM0/optional-lab-sigmoid-function-and-logistic-regression) *(Lab thực hành)*
-- [ ] [Optional lab: Decision boundary](https://www.coursera.org/learn/machine-learning/ungradedLab/kI0x7/optional-lab-decision-boundary) *(Lab thực hành)*
+- [x] [Motivations](https://www.coursera.org/learn/machine-learning/lecture/Z95y4/motivations) *(7 min)* — Vì sao Linear Regression thất bại khi phân loại nhị phân ($y \in \{0, 1\}$)?
+- [x] [Logistic regression](https://www.coursera.org/learn/machine-learning/lecture/0m3X4/logistic-regression) *(8 min)* — Hàm Sigmoid/Logistic: $g(z) = \frac{1}{1 + e^{-z}}$, mô hình xác suất $f_{\mathbf{w},b}(\mathbf{x}) = g(\mathbf{w} \cdot \mathbf{x} + b) = P(y=1|\mathbf{x})$
+- [x] [Decision boundary](https://www.coursera.org/learn/machine-learning/lecture/WqEeh/decision-boundary) *(8 min)* — Ranh giới quyết định tuyến tính & phi tuyến: $\mathbf{w} \cdot \mathbf{x} + b = 0$
+- [x] [Optional lab: Classification](https://www.coursera.org/learn/machine-learning/ungradedLab/2hQ2p/optional-lab-classification) *(Lab thực hành)*
+- [x] [Optional lab: Sigmoid function and logistic regression](https://www.coursera.org/learn/machine-learning/ungradedLab/5QjM0/optional-lab-sigmoid-function-and-logistic-regression) *(Lab thực hành)*
+- [x] [Optional lab: Decision boundary](https://www.coursera.org/learn/machine-learning/ungradedLab/kI0x7/optional-lab-decision-boundary) *(Lab thực hành)*
 
 ---
 

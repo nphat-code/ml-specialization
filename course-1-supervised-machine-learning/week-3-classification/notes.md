@@ -74,8 +74,13 @@ Tương tự như Polynomial Regression ở Tuần 2, ta có thể dùng **Featu
 Ví dụ: Chọn $z = x_1^2 + x_2^2 - 1$.
 Ranh giới quyết định $z = 0 \implies x_1^2 + x_2^2 = 1$.
 $\implies$ Đây là một **đường tròn bán kính 1**!
-- Mọi điểm nằm ngoài đường tròn ($x_1^2 + x_2^2 > 1$) được dự đoán $\hat{y} = 1$.
-- Mọi điểm nằm trong đường tròn ($x_1^2 + x_2^2 < 1$) được dự đoán $\hat{y} = 0$.
+- Mọi điểm nằm ngoài hoặc trên đường tròn ($x_1^2 + x_2^2 \ge 1$) được dự đoán $\hat{y} = 1$ (vì $z \ge 0 \implies g(z) \ge 0.5$).
+- Mọi điểm nằm bên trong đường tròn ($x_1^2 + x_2^2 < 1$) được dự đoán $\hat{y} = 0$ (vì $z < 0 \implies g(z) < 0.5$).
+
+> 💡 **BẢN CHẤT: Tại sao có khi NẰM TRONG là 1, có khi NẰM NGOÀI là 1?**
+> Việc miền bên trong hay bên ngoài đường tròn nhận nhãn $\hat{y} = 1$ hoàn toàn phụ thuộc vào **dấu của các trọng số $\mathbf{w}$ và $b$** mà mô hình học được:
+> - **Trường hợp nhãn 1 ở NGOÀI:** Mô hình học ra các trọng số dương $z = x_1^2 + x_2^2 - 1$. Muốn $z \ge 0 \iff x_1^2 + x_2^2 \ge 1$ (ngoài đường tròn). Thử tâm $(0, 0) \implies z = -1 < 0 \implies \hat{y} = 0$.
+> - **Trường hợp nhãn 1 ở TRONG (như bài tập kiểm định vi mạch chip):** Nhãn 1 gom cụm ở tâm, nhãn 0 bao quanh. Mô hình sẽ học ra các trọng số âm $z = 1 - x_1^2 - x_2^2$. Muốn $z \ge 0 \iff 1 - x_1^2 - x_2^2 \ge 0 \iff x_1^2 + x_2^2 \le 1$ (**TRONG đường tròn**). Thử tâm $(0, 0) \implies z = 1 > 0 \implies \hat{y} = 1$.
 
 ---
 
