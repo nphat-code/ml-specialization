@@ -25,7 +25,7 @@ Tài liệu theo dõi tiến độ chi tiết 1:1 theo giáo trình Coursera.
 - [x] [Feature engineering](https://www.coursera.org/learn/machine-learning/lecture/dgZYR/feature-engineering) *(3 min)* — Tự thiết kế đặc trưng mới (ví dụ: Diện tích = Chiều rộng $\times$ Chiều sâu)
 - [x] [Polynomial regression](https://www.coursera.org/learn/machine-learning/lecture/OnGhN/polynomial-regression) *(5 min)* — Hồi quy đa thức: Uốn cong hàm dự đoán với $x^2, x^3, \sqrt{x}$
 - [x] [Optional lab: Feature engineering and Polynomial regression](https://www.coursera.org/learn/machine-learning/ungradedLab/Xat0X/optional-lab-feature-engineering-and-polynomial-regression) *(Lab thực hành)*
-- [ ] [Optional lab: Linear regression with scikit-learn](https://www.coursera.org/learn/machine-learning/ungradedLab/uaIsm/optional-lab-linear-regression-with-scikit-learn) *(Lab thực hành Scikit-learn)*
+- [x] [Optional lab: Linear regression with scikit-learn](https://www.coursera.org/learn/machine-learning/ungradedLab/uaIsm/optional-lab-linear-regression-with-scikit-learn) *(Lab thực hành Scikit-learn)*
 - [ ] **Practice quiz: Gradient descent in practice** *(30 min)*
 
 ---
