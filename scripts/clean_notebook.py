@@ -1,6 +1,7 @@
 import sys
 import json
 import os
+import re
 
 def clean_notebook(file_path):
     if not os.path.exists(file_path):
@@ -23,11 +24,10 @@ def clean_notebook(file_path):
             cell_changed = False
             for line in lines:
                 original = line
-                # 1. Replace \tag{X} or \tag*{(X)}
-                for num in range(1, 30):
-                    line = line.replace(f'\\tag{{{num}}}', '')
-                    line = line.replace(f'\\tag*{{({num})}}', '')
-                
+                # 1. Convert \tag{X} to \quad (X) so equation numbers are preserved and KaTeX renders without error
+                line = re.sub(r'\\tag\{([^}]+)\}', r'\\quad (\1)', line)
+                line = re.sub(r'\\tag\*\{([^}]+)\}', r'\\quad \1', line)
+
                 # 2. Replace \newline inside math
                 line = line.replace('\\newline\\;', '\\\\')
                 line = line.replace('\\newline', '\\\\')
